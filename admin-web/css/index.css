@@ -1,0 +1,240 @@
+.container{
+	width:1060px;
+	height:100%;
+	margin:0 auto;
+	position: relative;
+}
+.font-size01{
+	font-size:14px;
+}
+.font-size02{
+	font-size:16px;
+}
+.font-size03{
+	font-size:20px;
+}
+.font-size04{
+	font-size:12px;
+}
+.font-size05{
+	font-size:18px;
+}
+.font-size06{
+	font-size:30px;
+}
+.font-color01{
+	color: #969393;/* 灰色 */
+}
+.font-color02{
+	color: #fff;/* 白色 */
+}
+.font-color03{
+	color: #888787;/* 灰色 */
+}
+.font-color04{
+	color: #a9a9a9;/* 灰色 */
+}
+.font-color05{
+	color: #353535;/* 深灰 */
+}
+.font-color06{
+	color: #59beed;/* 蓝色 */
+}
+.top{
+	height:40px;
+	line-height: 40px;
+	border-bottom:1px solid #f3f3f3;
+}
+.header{
+	height:104px;
+	border-bottom:1px solid #1e9b89;
+}
+.header .logo img{
+	margin-top:18px;
+}
+.header .banner a{
+	font-size:18px;
+	color: #353535;/* 深灰 */
+}
+.header .banner li{
+	width:90px;
+	margin:54px 0px 0px 40px;
+	float: left;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.header .banner li:hover,.header .banner li.hover{
+	border-bottom:6px solid #1e9b89;
+}
+.header .banner li:hover a,.header .banner li.hover a{
+	color: #1e9b89;/* 蓝色 */
+}
+.main{
+	width:100%;
+	min-height:600px;
+	height:auto;
+	background: url(../images/bg_img.png) center repeat;
+	background-size:100% 100%; 
+}
+.main .fl{
+	margin:156px 0px 0px 0px;
+}
+.main .fl .p02{
+	margin:30px 0px 50px 60px;
+}
+.main .fl .p03 input{
+	width:250px;
+	height:45px;
+	background-color: #ef7907;
+	border-radius: 20px;
+	margin-left:50px;
+	cursor: pointer;
+}
+.main .fl .p03 input:hover{
+	background-color: #db6f06;
+}
+.login-wrap{
+	position:relative;
+	top:120px;
+	right:100px;
+}
+.opacity-bg{
+	width:300px;
+	height:350px;
+	background: #000;
+	opacity: 0.6;
+	filter:alpha(opacity=60);  /* IE */
+	-moz-opacity:0.6;  /* 老版Mozilla */
+	-khtml-opacity:0.6;   /* 老版Safari */
+	-moz-border-radius: 8px; /* Firefox */
+	-webkit-border-radius: 8px; /* Safari 和 Chrome */
+	border-radius: 8px;
+}
+.login-con{
+	position: absolute;
+	top:0px;
+	margin-left:22px;
+}
+.login-wrap .title{
+	margin:30px 0px 22px 0px;
+}
+.login-wrap .input-box{
+	width:240px;
+	height:28px;
+	background: #fff;
+	padding:0px 6px;
+}
+.login-wrap .verification-code{
+	width:140px;
+}
+.login-wrap .verification-img{
+	position: relative;
+	top:8px;
+	left:10px;
+}
+.login-wrap .tip{
+	display: inline-block;
+	font-size: 12px;
+	color: #fd4b39;
+	height:12px;
+	line-height: 12px;
+}
+.login-wrap .find-password{
+	text-align: right;
+}
+.login-wrap .login-btn{
+	width:252px;
+	height:32px;
+	background: #1e9b89;
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius: 4px; /* Safari 和 Chrome */
+	border-radius: 4px;
+	cursor: pointer;
+}
+.login-wrap .login-btn:hover{
+	background: #1b8777;
+}
+.footer{
+	margin:36px 0px 20px 0px;
+}
+.footer p{
+	line-height: 30px;
+}
+.gray-bg{
+	background: #e7e7e7;
+	height:auto;
+	padding:50px 0px;
+}
+.message-wrap{
+	background: #fff;
+	padding:50px 60px;
+}
+.message-wrap .title{
+	margin-bottom:14px;
+}
+.message-wrap p{
+	line-height: 50px;
+}
+.message-wrap img{
+	position: absolute;
+	top:10px;
+	left:10px;
+}
+.message-wrap .list{
+	border-bottom:1px dashed #b4b4b4;
+	padding-top:20px;
+}
+.message-wrap .list p{
+	line-height: 40px;
+}
+.map{
+	width:100%;
+	height:734px;
+}
+#allmap{
+	width:100%;
+	height:734px;
+}
+#code-box{
+	width: 600px;
+	height:350px;
+	background: #fff;
+	padding:15px 20px;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:auto;
+	display: none;
+}
+#code-box .close{
+	float: right;
+	cursor: pointer;
+}
+#code-box h1{
+	font-size: 14px;
+	color: #676666;
+	margin-top:40px;
+	text-align: center;
+}
+#code-box ul{
+	display: block;
+	margin-top:70px;
+}
+#code-box li{
+	float: left;
+	margin-left:70px;
+}
+#code-box li:last-child img{
+	margin-left:6px;
+}
+#code-box .p01{
+	font-size: 18px;
+	color: #676666;
+	text-align: center;
+}
+#code-box .p02{
+	font-size: 14px;
+	color: #a5a4a4;
+}

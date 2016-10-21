@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv = "X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<title>报修单</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="container">
+		<div class="detail-main">
+			<div class="main">
+				<div class="part part1 font-size4 font-color3">
+					<p><strong class="font-color1">报障单号</strong>16072716170001</p>
+					<p><strong class="font-color1">报障机构 </strong>南京分行营业部</p>
+					<p><strong class="font-color1">报障人</strong>罗定伟 13811626662</p>
+					<p class="mui-flex">
+						<strong class="font-color1">报障设备</strong>
+						<lebel class="cell">服务器 thinkpadt4523262622323</lebel>
+					</p>
+				</div>
+				<div class="part part2 font-size4 font-color7">
+					<p class="word">服务器没有反应。服务器没有反应。服务器没有反应。服务器没有反应。</p>
+					<ul class="mui-flex imgs">
+						<li class="cell"><img src="images/img1.png" alt="" width="100%" height="100%"/></li>
+						<li class="cell"><img src="images/login_bg.jpg" alt="" width="100%" height="100%"/></li>
+						<li class="cell"><img src="images/img1.png" alt="" width="100%" height="100%"/></li>
+					</ul>
+					<div class="video-wrap">
+						<video width="100%" height="100%" id="video" preload="preload" autobuffer>
+						  	<source src="images/video.mp4" type="video/mp4">
+						  	Your browser does not support HTML5 video.
+						</video>
+						<div class="play-btn" id="video-play-btn"><span class="icon video-icon"></span></div>
+					</div>
+					<div class="audio-wrap clearfix">
+						<audio id="audio" preload="preload">
+							<source src="images/audio.ogg" type="audio/ogg">
+							<source src="images/audio.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>
+						<div class="play-btn fl" id="audio-play-btn">
+							<span class="icon triangle-icon"></span>
+							<span class="btn"></span>
+							<span class="icon audio-icon"></span>
+						</div>
+						<label class="font-size8 font-color2 min">5 min</label>
+						<div class="fr font-color2 change-btn">重新转换</div>
+					</div>
+					<p class="audio-word">（上次报修的那服务器又坏了上次报修的那服务器又坏了上次报修的那服务器又坏了）</p>
+				</div>
+				<div class="part part3 font-size4 font-color3">
+					<p class="title">转介记录</p>
+					<div class="list clearfix mui-flex">
+						<div class="fl cell">林日曦：这个给周耀辉</div>
+						<div class="fr font-size8 font-color1">2016-07-27 16:17</div>
+					</div>
+					<div class="list clearfix mui-flex">
+						<div class="fl cell">林日曦：这个给周耀辉</div>
+						<div class="fr font-size8 font-color1">2016-07-27 16:17</div>
+					</div>
+				</div>
+			</div>
+			<input type="button" value="分配" class="font-size5 font-color6 distribution-btn"/>
+		</div>
+		<div id="mask"></div>
+		<div id="picture-wrap">
+			<img src="images/close.png" alt="关闭" class="close" width="22" height="22"/>
+			<img src="" alt="" width="100%" height="100%" id="picture"/>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/html5media.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// 放大图片
+			$(".imgs li").live("click",function(){
+				var this_src=$(this).find("img").attr("src");
+				$("#picture").attr("src",this_src);
+				$("html body").addClass("alpha");
+				$("#mask,#picture-wrap").fadeIn();
+			})
+			// 关闭放大图片
+			$(".close").on("click",function(){
+				$("html body").removeClass("alpha");
+				$("#picture-wrap,#video-wrap,#mask").fadeOut();
+			})
+			// 有遮罩层时不可滑动页面
+		    document.body.addEventListener('touchmove', function (event) {
+		       if(!$("#mask").is(":hidden")) {
+		           event.preventDefault();
+		       }
+		    }); 
+			// 视频音频播放
+			var myVideo=document.getElementById("video");
+			var myAudio=document.getElementById("audio"); 
+			$("#video-play-btn").live("click",function(){
+				myVideo.play();
+			})
+			$("#audio-play-btn").live("click",function(){
+				if(myAudio.paused) {  
+			        myAudio.play();
+			    }else {  
+			        myAudio.pause();
+			    } 
+			})
+		})
+	</script>
+</body>
+</html>

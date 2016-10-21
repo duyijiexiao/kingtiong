@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv = "X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<title>讨论贴</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="container">
+		<div class="discuss-content margin-50 part-1">
+			<div class="bottom-list margin-top-0">
+				<div class="list mui-flex">
+					<img src="images/avartar.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">庄冬昕</p>
+						<p class="date-discuss">2016-08-23 13:50</p>
+					</div>
+				</div>
+			</div>
+			<div class="detail-content">
+				<p>【公告】无线局域网连接方式</p>
+				<p class="msg">1、对等连接采用无中心拓扑结构，只需无线网卡，不需要无线接入器即可连接，并且所有无线连接的计算机都能对等地相互通信。在这种连接方式中，一个工作站会自动设置为初始站，对网络进行初始化，使所有同域（ SSID 相同）的工作站成为一个局域网，允许有多个站点同时发送信息。在 MAC 帧中，就同时有源地址、目的地址和初始站地址。这种对等连接由于不支持 TCP/IP 协议,因而需设置 NetBEUI 协议,适合未建网的用户，或组建临时性的网络，如野外作业、临时流动会议等。每台计算机仅需一个无线网卡，简单、成本低。2、这种连接方式以星性拓扑为基础，以无线接入器为中心，所有的无线站点通信要通过接入器接转， MAC 帧包含有源地址、目的地址和接入点地址。通过各站点的响应信号，接入器能在内部建立一个像“路由表”那样的“桥连接表”，将各个站点和端口联系起来。当接转信号时，接入器就通过查询“桥连接表”进行。由于接入器有以太网接口，这样，既能以接入器为中心独立建一个无线局域网，也可将接入器作为有线局域网的扩展部分，实现与有线局域网漫游功能。如图 所示。当室内布线不方便、原来的信息点不够用或有计算机的相对移动时，可以利用这种连接方式。这样就可以使插有无线网卡的客户共享有线网资源,实现有线无线随时随地的共享连接。3、 A 网与 B 网分别为两个有线局域网，在距离较远无法布线的情况下，可通过两台无线网桥将两个有线局域网连在一起，可通过网桥上的 RJ45 口接口与有线的交换机或集线器相接。网桥的射频输出端口，通过线缆接到天线。这种连接方式适合于两点之间距离较远或中间有河流、马路等无法布线，专线、拨号成本又高的情况，可以传输图象、语音、数据等。/4、 A 、 B 、 C 网分别为三个有线网， A 网为中心点，外围有 B 网和 C 网。其中，在中心点 A 网的无线网桥中需安装两块无线网卡，两块无线网卡通过线缆分别连接两部定向天线，两部天线分别指向 B 网和 C 网的定向天线。这种连接方式可将多个局域网连接起来，共享网络资源。当连接情况较为复杂时，中心点可采用全向天线与各子网互联。</p>
+			</div>
+			<div class="bottom-list margin-0">
+				<div class="list mui-flex">
+					<img src="images/avartar.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">宋沛言</p>
+						<p class="date-discuss">2016-08-23 15:00</p>
+						<p class="title">学习了</p>
+					</div>
+				</div>
+				<div class="list mui-flex">
+					<img src="images/avartar02.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">蓝奕邦</p>
+						<p class="date-discuss">2016-08-23 15:23</p>
+						<p class="title">学习了</p>
+					</div>
+				</div>
+				<div class="list mui-flex">
+					<img src="images/avartar03.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">卓韵芝</p>
+						<p class="date-discuss">2016-08-23 15:54</p>
+						<p class="title">学习了</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="discuss-content margin-50 part-2">
+			<div class="bottom-list margin-top-0">
+				<div class="list mui-flex">
+					<img src="images/avartar02.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">林若宁</p>
+						<p class="date-discuss">2016-09-13 15:20</p>
+					</div>
+				</div>
+			</div>
+			<div class="detail-content">
+				<p>【经验】电脑进不去系统怎么重装？</p>
+				<p class="msg">1.插入启动U盘，按U盘启动按键启动U盘,通过U盘启动后会进入WinPE系统打开桌面上的Onekey Ghost2.接下来，在Onekey ghost选择还原分区，在GHO WIM ISO映像路径中选择你之前复制到U盘里的Win7系统镜像Windows7.GHO，然后点击底下的C盘3.弹出来一个提示框，询问是否进行还原，先把完成后重启和引导修复都勾选上，然后点击确定4.然后开始进行安装，如下图，稍等一会，等进度条走完，计算机会自动进行重启5.重启后，会进入Windows7安装程序，系统自动安装驱动程序和系统服务等，您只要等等就行PS:如果您之前是通过修改BIOS来实现U盘启动的话，需要再进入BIOS把启动优先级调回硬盘，然后开机就行了</p>
+			</div>
+			<div class="bottom-list margin-0">
+				<div class="list mui-flex">
+					<img src="images/avartar02.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">周定伟</p>
+						<p class="date-discuss">2016-09-13 15:27</p>
+						<p class="title">厉害！</p>
+					</div>
+				</div>
+				<div class="list mui-flex">
+					<img src="images/avartar03.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">方杰</p>
+						<p class="date-discuss">2016-09-13 17:39</p>
+						<p class="title">非常实用，宁哥厉害！</p>
+					</div>
+				</div>
+				<div class="list mui-flex">
+					<img src="images/avartar04.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">夏至</p>
+						<p class="date-discuss">2016-09-14 09:23</p>
+						<p class="title">有现成的启动U盘吗</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="discuss-content margin-50 part-3">
+			<div class="bottom-list margin-top-0">
+				<div class="list mui-flex">
+					<img src="images/avartar03.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">朱凌凌</p>
+						<p class="date-discuss">2016-09-16 20:00</p>
+					</div>
+				</div>
+			</div>
+			<div class="detail-content">
+				<p>【提问】笔记本电脑无法开机</p>
+				<p class="msg">笔记本电脑开机显示press the esc key for startup menu,但是没反应,怎么解除这个状态?</p>
+			</div>
+			<div class="bottom-list margin-0">
+				<div class="list mui-flex">
+					<img src="images/avartar.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">林若宁</p>
+						<p class="date-discuss">2016-09-16 23:30</p>
+						<p class="title">屏有背光没显示 我初步怀疑是 显卡虚焊 其次怀疑系统坏了 装个系统可以试试好不好 最后屏的可能性小 …还有 记得清尘处理散热 不然笔记本寿命短 维修毛病就会多</p>
+					</div>
+				</div>
+				<div class="list mui-flex">
+					<img src="images/avartar03.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">朱凌凌</p>
+						<p class="date-discuss">2016-09-17 08:00</p>
+						<p class="title">屏幕坏掉的可能性小？主界面出不来能怎么装系统有什么方法</p>
+					</div>
+				</div>
+				<div class="list mui-flex">
+					<img src="images/avartar04.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">林若宁</p>
+						<p class="date-discuss">2016-09-16 08:42</p>
+						<p class="title">显示英文了吗 那就是 硬件没问题</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="discuss-content margin-50 part-4">
+			<div class="bottom-list margin-top-0">
+				<div class="list mui-flex">
+					<img src="images/avartar04.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">方杰</p>
+						<p class="date-discuss">2016-09-13 11:32</p>
+					</div>
+				</div>
+			</div>
+			<div class="detail-content">
+				<p>【提问】电脑黑屏无法重启</p>
+				<p class="msg">电脑是华硕a42jp老爷机，去年加了固态焕发新生后一直运行正常。今年八月升级了win10的一周年更新版后，卡得不行。最近时卡时不卡的，也是头疼得很。开机突然屏幕出现了满屏的雪花，然后一黑，电脑无反应了，但是硬盘灯，风扇运行正常。然后强制重启开机后屏幕再也不会亮了。这大概是哪里出了问题？</p>
+			</div>
+			<div class="bottom-list margin-0">
+				<div class="list mui-flex">
+					<img src="images/avartar.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">林若宁</p>
+						<p class="date-discuss">2016-09-13 15:42</p>
+						<p class="title">显卡的问题！</p>
+					</div>
+				</div>
+				<div class="list mui-flex">
+					<img src="images/avartar04.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">方杰</p>
+						<p class="date-discuss">2016-09-13 17:20</p>
+						<p class="title">哥们这么确定？</p>
+					</div>
+				</div>
+				<div class="list mui-flex">
+					<img src="images/avartar03.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">林若宁</p>
+						<p class="date-discuss">2016-09-13 19:24</p>
+						<p class="title">从你说的问题来看，显卡的问题是最大的！</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="replay-box">
+			<input type="text" name="" value="" placeholder="回复" class="fl"/>
+			<span class="fr replay-icon">发送</span>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		// 获取详情数据
+		function getDetail(id){
+			if(id==1){
+				$(".part-1").show();
+			}else if(id==2){
+				$(".part-2").show();
+			}else if(id==3){
+				$(".part-3").show();
+			}else if(id==4){
+				$(".part-4").show();
+			}
+		}
+	</script>
+</body>
+</html>

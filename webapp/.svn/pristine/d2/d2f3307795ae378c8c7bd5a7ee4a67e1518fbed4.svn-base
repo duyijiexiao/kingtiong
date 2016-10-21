@@ -1,0 +1,113 @@
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;
+	font-family:Helvetica;
+}
+html{
+	font-size:62.5%;
+}
+body{
+	background: #ebebeb;
+}
+ul,li{ 
+	list-style: none;
+	list-style-type:none;
+}
+img,input{
+	border:0;
+}
+img{
+	display:block;
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:none;
+}
+a,img,button,input,textarea{
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+	-webkit-appearance: none;/*取消默认样式*/
+}
+input{
+	outline:none;
+} 
+em{
+	font-style: normal;
+}
+.alpha {
+     height: 100%;
+     overflow: hidden;
+     position: relative;
+}
+.alpha body {
+     height: 100%;
+     overflow: hidden;
+}
+.clearfix{
+  	clear: both;
+}
+.clearfix:after{
+  	display:block;
+  	clear:both;
+  	content:"";
+  	visibility:hidden;
+  	height:0;
+  	font-size:0; 
+	line-height:0;
+} 
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.none{
+	display:none;
+}
+.center{
+	text-align:center;
+}
+/*单行溢出显示省略*/
+.text-over-hide{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mui-flex,
+.mui-flex *,
+.mui-flex :after,
+.mui-flex :before {
+	box-sizing: border-box;
+}
+.mui-flex {
+	display: -webkit-box!important;
+	display: -webkit-flex!important;
+	display: -ms-flexbox!important;
+	display: flex!important;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.mui-flex>.cell {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	width: 0;
+	-webkit-flex-basis: 0;
+	-ms-flex-preferred-size: 0;
+	flex-basis: 0;
+	max-width: 100%;
+	display: block;
+	padding: 0!important;
+	position: relative;
+}
+.mui-flex>.cell.fixed {
+	-webkit-box-flex: 0!important;
+	-webkit-flex: none!important;
+	-ms-flex: none!important;
+	flex: none!important;
+	width: auto;
+}

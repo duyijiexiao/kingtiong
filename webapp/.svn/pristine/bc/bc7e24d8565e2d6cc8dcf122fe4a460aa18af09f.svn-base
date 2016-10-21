@@ -1,0 +1,10 @@
+.container{
+	position: relative;
+	max-width:750px;
+	width:100%;
+	margin:0 auto;
+	background:#e6e6e6;
+}
+.agreement-content{
+	padding:24px;
+}

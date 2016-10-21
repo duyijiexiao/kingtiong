@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+      	<meta charset="UTF-8">
+      	<meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="renderer" content="webkit"><!-- 极速核 -->
+        <title>首页</title>
+        <link rel="icon" type="image/x-icon" href="" />
+        <link rel="stylesheet" href="css/common.css?v=2016081110">
+        <link rel="stylesheet" href="css/index.css?v=2016081110">
+    </head>
+    <body>
+        <div class="top">
+            <div class="container">
+                <p class="fr font-size01 font-color01">欢迎使用金运维管理后台！</p>
+            </div>
+        </div>
+	    <div class="header">
+            <div class="container">
+                <div class="logo fl">
+                    <a href=""><img src="images/logo.png" alt="logo" title="logo" width="202" height="65"/></a>
+                </div>
+                <ul class="banner fr">
+                    <li class="hover"><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="help.html">帮助中心</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="fl">
+                    <p class="font-size06 font-color02 p01">一点就到，金牌品质-点点维</p>
+                    <p class="font-size05 font-color02 p02">便捷、快速、高效的运维服务</p>
+                    <p class="p03">
+                        <input type="button" value="点点维&nbsp;&nbsp;&nbsp;APP下载" class="font-size05 font-color02" id="code-download"/>
+                    </p>
+                </div>
+                <div class="fr login-wrap">
+                    <div class="opacity-bg"></div>
+                    <div class="login-con">
+                        <p class="title font-size03 font-color02">金运维登录</p>
+                        <input name="" type="text" value="" placeholder="请输入账号" class="input-box"/><br/>
+                        <span class="tip tip01"></span><br/>
+                        <input name="" type="password" value="" placeholder="请输入密码" class="input-box"/><br/>
+                        <span class="tip tip02"></span><br/>
+                        <input name="" type="text" value="" placeholder="验证码" class="input-box verification-code"/>
+                        <img src="images/code_img.png" title="动态验证码" alt="动态验证码" width="84" height="27" class="verification-img"/><br/>
+                        <span class="tip tip03"></span>
+                        <p class="find-password"><a href="#" class="font-size02 font-color02">忘记密码？</a></p>
+                        <p class="clearfix"><span class="tip tip04"></span></p>
+                        <input type="submit" value="登录" class="login-btn font-size05 font-color02"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <p class="center font-size01 font-color03">Copyright©丨2017 杭州金程科技有限公司丨ICP号：浙B2-20160285</p>
+                <p class="center font-size04 font-color04">建议您使用IE9.0及以上版本/火狐/谷歌等浏览器登陆本站点</p>
+            </div>
+        </div>
+        <!-- 二维码扫描框 -->
+        <div id="code-box">
+            <img src="images/close.png" alt="关闭" width="24" height="24" class="clearfix close"/>
+            <h1>用手机扫描下面二维码，选择你的手机系统下载</h1>
+            <ul>
+                <li>
+                    <img src="images/user_code.png" alt="客户端" width="100" height="100"/>
+                    <p class="p01">安卓客户端</p>
+                    <p class="p02">（报修人安装）</p>
+                </li>
+                <li>
+                    <img src="images/user_code.png" alt="客户端" width="100" height="100"/>
+                    <p class="p01">IOS客户端</p>
+                    <p class="p02">（报修人安装）</p>
+                </li>
+                <li>
+                    <img src="images/user_code.png" alt="客户端" width="100" height="100"/>
+                    <p class="p01">安卓职业版</p>
+                    <p class="p02">（运维人员安装）</p>
+                </li>
+            </ul>
+        </div>
+      	<script src="js/jquery-1.7.2.min.js"></script>
+      	<script src="js/common.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("#code-download").on("click",function(){
+                    $("#code-box").fadeIn();
+                })
+                $("#code-box .close").on("click",function(){
+                    $("#code-box").fadeOut();
+                })
+            })
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv = "X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<title>讨论区</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="container">
+		<div class="discuss-content">
+			<div class="search-box">
+				<div class="search">
+					<input type="text" name="" value="" placeholder="搜索"/>
+					<span class="icon search-icon"></span>
+				</div>
+			</div>
+			<div class="top-list">
+				<div class="list text-over-hide" data-id="1">
+					<label>置顶</label>
+					<span>【公告】无线局域网连接方式</span>
+				</div>
+				<div class="list text-over-hide" data-id="2">
+					<label>置顶</label>
+					<span>【经验】电脑进不去系统怎么重装？</span>
+				</div>
+			</div>
+			<div class="bottom-list">
+				<div class="list mui-flex" data-id="3">
+					<img src="images/avartar03.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">朱凌凌</p>
+						<p class="title text-over-hide">【提问】笔记本电脑无法开机</p>
+						<p class="date-discuss">
+							<span class="fl">2016-09-16 20:00</span>
+							<span class="fr">
+								<em class="icon discuss-icon"></em>
+								<label>3</label>
+							</span>
+						</p>
+					</div>
+				</div>
+				<div class="list mui-flex" data-id="4">
+					<img src="images/avartar04.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">方杰</p>
+						<p class="title text-over-hide">【提问】电脑黑屏无法重启</p>
+						<p class="date-discuss">
+							<span class="fl"> 2016-09-13 11:32</span>
+							<span class="fr">
+								<em class="icon discuss-icon"></em>
+								<label>3</label>
+							</span>
+						</p>
+					</div>
+				</div>
+				<div class="list mui-flex" data-id="2">
+					<img src="images/avartar02.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">林若宁</p>
+						<p class="title text-over-hide">【经验】电脑进不去系统怎么重装？</p>
+						<p class="date-discuss">
+							<span class="fl"> 2016-09-13 15:20</span>
+							<span class="fr">
+								<em class="icon discuss-icon"></em>
+								<label>3</label>
+							</span>
+						</p>
+					</div>
+				</div>
+				<div class="list mui-flex" data-id="1">
+					<img src="images/avartar.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">庄冬昕</p>
+						<p class="title text-over-hide">【公告】无线局域网连接方式</p>
+						<p class="date-discuss">
+							<span class="fl">2016-08-23 13:50</span>
+							<span class="fr">
+								<em class="icon discuss-icon"></em>
+								<label>3</label>
+							</span>
+						</p>
+					</div>
+				</div>
+				<div class="list mui-flex" data-id="3">
+					<img src="images/avartar03.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">朱凌凌</p>
+						<p class="title text-over-hide">【提问】笔记本电脑无法开机</p>
+						<p class="date-discuss">
+							<span class="fl">2016-09-16 20:00</span>
+							<span class="fr">
+								<em class="icon discuss-icon"></em>
+								<label>3</label>
+							</span>
+						</p>
+					</div>
+				</div>
+				<div class="list mui-flex" data-id="4">
+					<img src="images/avartar04.png" alt="头像" width="40" height="40" class="fl"/>
+					<div class="fl cell con">
+						<p class="name">方杰</p>
+						<p class="title text-over-hide">【提问】电脑黑屏无法重启</p>
+						<p class="date-discuss">
+							<span class="fl"> 2016-09-13 11:32</span>
+							<span class="fr">
+								<em class="icon discuss-icon"></em>
+								<label>3</label>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="add-discuss">
+			<span class="icon"></span>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		// 点击列表跳转详情页
+		$(".list").live("click",function(){
+			var id=$(this).data("id");
+			// 跳转文件地址
+	        var this_url=url+"kingop-base-app/discuss_detail.html";
+	        var para="getDetail('" + id + "');";
+	        if(ismobile(1)==1){
+                Android.callDetail(this_url,para);
+            }
+		})
+		// 发布讨论
+		$("#add-discuss").on("click",function(){
+			// 跳转文件地址
+	        var this_url=url+"kingop-base-app/discuss_release.html";
+	        var para="";
+	        if(ismobile(1)==1){
+                Android.callDetail(this_url,para);
+            }
+		})
+	</script>
+</body>
+</html>
